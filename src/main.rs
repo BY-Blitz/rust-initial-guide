@@ -1,4 +1,6 @@
 fn main() {
+    println!("Hello, world!");
+
     println!("{} days", 31);
 
     // Positional arguments can be used. Specifying an integer inside `{}`
@@ -39,4 +41,9 @@ fn main() {
 
     // Only types that implement fmt::Display can be formatted with `{}`. User-
     // defined types do not implement fmt::Display by default.
+  
+  
+    let number: f64 = 1.0;
+    let width: usize = 5;
+    println!("{number:>width$}");
 }
