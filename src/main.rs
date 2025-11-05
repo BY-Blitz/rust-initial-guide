@@ -42,6 +42,8 @@ fn main() {
     // Only types that implement fmt::Display can be formatted with `{}`. User-
     // defined types do not implement fmt::Display by default.
   
+    #[allow(dead_code)]
+    struct Structure(i32);  
   
     let number: f64 = 1.0;
     let width: usize = 5;
